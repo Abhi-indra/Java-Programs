@@ -8,7 +8,7 @@ public class Calculator {
             System.out.println("Enter the Operator = ");
             char op = input.next().trim().charAt(0);
 
-            if (op == '+' || op == '-' || op == '*' || op == '/' || op == '%'|| op == 'x' || op == 'X') {
+            if (op == '+' || op == '-' || op == '*' || op == '/' || op == '%') {
                 System.out.println("Enter the two numbers : ");
                 int num1 = input.nextInt();
                 int num2 = input.nextInt();
@@ -28,10 +28,11 @@ public class Calculator {
                     }
                 }
                 if (op == '%') {
-                        ans = num1 % num2;
-                } else if(op == 'x' || op == 'X'){
+                    ans = num1 % num2;
+                }
+            } else if(op == 'x' || op == 'X'){
                     break;
-                } else {
+            } else {
                     System.out.println("Invalid Operation");
                 }
                 System.out.println("The answer is = "+ans);
@@ -39,4 +40,4 @@ public class Calculator {
         }
 
     }
-}
+
