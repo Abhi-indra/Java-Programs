@@ -11,7 +11,7 @@ public class SimpleInterest {
         System.out.print("Enter the rate in interest: ");
         int rate = in.nextInt();
 
-        long simple_interest = (principal * rate * time);
+        long simple_interest = ((principal * rate * time)/100);
 
         System.out.println("The simple interest of the given amount is: "+simple_interest);
 
