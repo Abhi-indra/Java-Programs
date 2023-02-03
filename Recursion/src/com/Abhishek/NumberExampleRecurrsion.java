@@ -13,6 +13,8 @@ public class NumberExampleRecurrsion {
 //        recursive call
 //        if base condition is not present then after computer memory full it give stack overflow error
         System.out.println(n);
+
+//        this is called tail Recursion
         print(n + 1);
     }
 }
